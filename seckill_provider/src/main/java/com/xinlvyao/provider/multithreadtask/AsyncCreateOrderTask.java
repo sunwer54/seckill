@@ -102,6 +102,7 @@ public class AsyncCreateOrderTask {
                     return message;
                 }
             };
+
             sender.sendMsg(orderMsg,messagePostProcessor);
             System.out.println("消息发送到队列成功");
         }
