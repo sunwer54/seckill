@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="redis" />
+        <module name="mapper" />
+        <module name="commons" />
+        <module name="api" />
+        <module name="pojo" />
+        <module name="seckill_web" />
+        <module name="passport" />
+        <module name="seckill_provider" />
+        <module name="rabbitmq_send" />
+        <module name="rabbitmq_receive" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="mapper" options="-parameters" />
+      <module name="passport" options="-parameters" />
+      <module name="pojo" options="-parameters" />
+      <module name="rabbitmq_receive" options="-parameters" />
+      <module name="rabbitmq_send" options="-parameters" />
+      <module name="redis" options="-parameters" />
+      <module name="seckill_provider" options="-parameters" />
+      <module name="seckill_web" options="-parameters" />
+    </option>
+  </component>
+</project>

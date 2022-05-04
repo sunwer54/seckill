@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider-service #配置当前服务器名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置nacos注册中心
+  profiles:
+    active: mapper,redis,send #关联mapper模块和redis模块和send模块的配置文件
+server:
+  port: 8080 #当前服务器端口

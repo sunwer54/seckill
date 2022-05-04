@@ -1,0 +1,19 @@
+spring:
+  #服务应用
+  application:
+    name: web-service #服务应用名称
+  #nacos注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #nacos注册中心的地址
+  #视图解析器
+  mvc:
+    view:
+      prefix: /pages/  #前缀
+      suffix: .html  #后缀
+  #关联其他模块配置文件
+  profiles:
+    active: redis #关联redis配置文件
+server:
+  port: 8081 #当前服务器端口

@@ -1,0 +1,20 @@
+spring:
+  #配置视图解析器
+  mvc:
+    view:
+      prefix: /pages/ #前缀
+      suffix: .html #后缀
+  #配置当前服务应用的名称
+  application:
+    name: passport-service #服务应用的名称
+  #配置nacos注册中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #nacos注册中心所在的地址
+  #配置关联其他模块的配置文件
+  profiles:
+    active: redis #关联redis模块配置文件
+#当前服务器端口
+server:
+  port: 8084
